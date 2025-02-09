@@ -1,0 +1,48 @@
+.dark-theme {
+    --primary-bg: #121212;
+    --secondary-bg: #1e1e1e;
+    --accent-primary: #7b61ff;
+    --accent-secondary: #ff6b6b;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --board-light: #e9d5b5;
+    --board-dark: #8b4513;
+}
+
+.dark-theme body {
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+}
+
+.dark-theme .main-header {
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .chess-board-section {
+    background-color: var(--secondary-bg);
+}
+
+.dark-theme .lesson-card {
+    background-color: var(--secondary-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .footer {
+    background-color: var(--secondary-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .cta-button {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.dark-theme .cta-button:hover {
+    background-color: #8b74ff;
+}
+
+.dark-theme #chessboard {
+    border-color: #4a4a4a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
