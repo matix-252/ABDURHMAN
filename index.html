@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شطرنج | الصفحة الرئيسية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="dark-theme">
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">شطرنج</div>
+            <ul class="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#play">العب الآن</a></li>
+                <li><a href="#learn">تعلم</a></li>
+                <li><a href="#news">الأخبار</a></li>
+                <li><a href="#history">التاريخ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeIn">مرحباً بك في عالم الشطرنج ♔</h1>
+                <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">اكتشف جمال اللعبة الملكية واختبر مهاراتك</p>
+                <div class="hero-features animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="feature-item">
+                        <span class="feature-icon">🎮</span>
+                        <p>العب مع الكمبيوتر</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📚</span>
+                        <p>تعلم الاستراتيجيات</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🏆</span>
+                        <p>طور مهاراتك</p>
+                    </div>
+                </div>
+                <div class="hero-buttons animate__animated animate__fadeIn animate__delay-3s">
+                    <a href="#play" class="cta-button primary-btn">ابدأ اللعب الآن</a>
+                    <a href="#learn" class="cta-button secondary-btn">تعلم الأساسيات</a>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="chess-pieces-bg"></div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <h2 class="section-title animate__animated animate__fadeIn">لماذا تلعب الشطرنج معنا؟</h2>
+            <div class="features-grid">
+                <div class="feature-card animate__animated animate__fadeIn">
+                    <div class="feature-icon">⚡</div>
+                    <h3>سهل الاستخدام</h3>
+                    <p>واجهة بسيطة وسلسة تناسب جميع المستويات</p>
+                </div>
+                <div class="feature-card animate__animated animate__fadeIn">
+                    <div class="feature-icon">🤖</div>
+                    <h3>خصم ذكي</h3>
+                    <p>العب ضد كمبيوتر يتحدى مهاراتك</p>
+                </div>
+                <div class="feature-card animate__animated animate__fadeIn">
+                    <div class="feature-icon">📱</div>
+                    <h3>متوافق مع كل الأجهزة</h3>
+                    <p>العب من أي جهاز وفي أي وقت</p>
+                </div>
+                <div class="feature-card animate__animated animate__fadeIn">
+                    <div class="feature-icon">🎯</div>
+                    <h3>تعلم وتطور</h3>
+                    <p>دروس ونصائح لتحسين مستواك</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="play" class="chess-board-section">
+            <h2>العب الشطرنج</h2>
+            <div class="game-container">
+                <div class="captured-pieces black-captured">
+                    <h3>القطع المأسورة السوداء</h3>
+                    <div id="captured-black" class="captured-area"></div>
+                </div>
+                <div class="board-container">
+                    <div id="chessboard"></div>
+                    <div id="status" class="game-status"></div>
+                    <div class="game-controls">
+                        <button id="newGame">لعبة جديدة</button>
+                        <button id="undo">تراجع</button>
+                    </div>
+                </div>
+                <div class="captured-pieces white-captured">
+                    <h3>القطع المأسورة البيضاء</h3>
+                    <div id="captured-white" class="captured-area"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="learn-section">
+            <h2>تعلم الشطرنج</h2>
+            <div class="lessons-container">
+                <!-- القواعد الأساسية -->
+                <div class="lesson-card basic-rules">
+                    <h3>القواعد الأساسية 📚</h3>
+                    <div class="lesson-content">
+                        <h4>حركة القطع:</h4>
+                        <ul>
+                            <li><strong>الملك ♔:</strong> يتحرك مربع واحد في أي اتجاه</li>
+                            <li><strong>الوزير ♕:</strong> يتحرك في أي اتجاه، أي عدد من المربعات</li>
+                            <li><strong>الفيل ♗:</strong> يتحرك قطرياً فقط</li>
+                            <li><strong>الحصان ♘:</strong> يتحرك على شكل حرف L</li>
+                            <li><strong>الطابية ♖:</strong> تتحرك أفقياً وعمودياً</li>
+                            <li><strong>الجندي ♙:</strong> يتحرك للأمام مربع واحد، ويأكل قطرياً</li>
+                        </ul>
+
+                        <h4>قواعد مهمة:</h4>
+                        <ul>
+                            <li>الهدف هو عمل كش ملك للخصم</li>
+                            <li>لا يمكن ترك ملكك في وضع الكش</li>
+                            <li>الجندي يمكنه التحرك مربعين في أول حركة له</li>
+                            <li>عند وصول الجندي للصف الأخير، يمكن ترقيته</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- الاستراتيجيات البسيطة -->
+                <div class="lesson-card strategies">
+                    <h3>استراتيجيات بسيطة 🎯</h3>
+                    <div class="lesson-content">
+                        <h4>نصائح للمبتدئين:</h4>
+                        <ul>
+                            <li>سيطر على مركز اللوحة</li>
+                            <li>قم بتطوير قطعك في بداية اللعبة</li>
+                            <li>احمِ ملكك دائماً</li>
+                            <li>فكر قبل كل حركة</li>
+                        </ul>
+
+                        <h4>أخطاء شائعة تجنبها:</h4>
+                        <ul>
+                            <li>لا تخرج الوزير مبكراً</li>
+                            <li>لا تكرر نفس الحركة</li>
+                            <li>لا تهمل تطوير باقي القطع</li>
+                            <li>لا تستعجل في أكل القطع</li>
+                        </ul>
+
+                        <div class="pro-tip">
+                            <h4>💡 نصيحة احترافية:</h4>
+                            <p>ركز على تطوير الأحصنة والفيلة أولاً، ثم قم بالتحصين لحماية ملكك!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link">فيسبوك</a>
+                <a href="#" class="social-link">تويتر</a>
+                <a href="#" class="social-link">انستغرام</a>
+            </div>
+            <div class="owner-info">
+                <p class="thank-you">شكراً لكم لزيارة موقعنا</p>
+                <p class="owner-name">مالك الموقع: عبدالرحمن الخليفه</p>
+            </div>
+            <p class="copyright">جميع الحقوق محفوظة 2025</p>
+        </div>
+    </footer>
+
+    <!-- Load libraries in correct order -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stockfish.js@10.0.2/stockfish.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chess-engine.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
