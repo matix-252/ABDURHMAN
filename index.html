@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شطرنج | الصفحة الرئيسية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="dark-theme">
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">شطرنج</div>
+            <ul class="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#play">العب الآن</a></li>
+                <li><a href="#learn">تعلم</a></li>
+                <li><a href="#news">الأخبار</a></li>
+                <li><a href="#history">التاريخ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeIn">مرحباً بك في عالم الشطرنج</h1>
+                <p class="animate__animated animate__fadeIn">اكتشف جمال اللعبة الملكية</p>
+                <button class="cta-button">ابدأ اللعب</button>
+            </div>
+        </section>
+
+        <section id="play" class="chess-board-section">
+            <h2>العب الشطرنج</h2>
+            <div class="game-container">
+                <div class="captured-pieces black-captured">
+                    <h3>القطع المأسورة السوداء</h3>
+                    <div id="captured-black" class="captured-area"></div>
+                </div>
+                <div class="board-container">
+                    <div id="chessboard"></div>
+                    <div id="status" class="game-status"></div>
+                    <div class="game-controls">
+                        <button id="newGame">لعبة جديدة</button>
+                        <button id="undo">تراجع</button>
+                    </div>
+                </div>
+                <div class="captured-pieces white-captured">
+                    <h3>القطع المأسورة البيضاء</h3>
+                    <div id="captured-white" class="captured-area"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="learn-section">
+            <h2>تعلم الشطرنج</h2>
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <h3>القواعد الأساسية</h3>
+                    <p>تعلم كيفية تحريك القطع وقواعد اللعبة الأساسية</p>
+                </div>
+                <div class="lesson-card">
+                    <h3>الاستراتيجيات</h3>
+                    <p>اكتشف استراتيجيات متقدمة لتحسين لعبك</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link">فيسبوك</a>
+                <a href="#" class="social-link">تويتر</a>
+                <a href="#" class="social-link">انستغرام</a>
+            </div>
+            <p class="copyright">جميع الحقوق محفوظة 2025</p>
+        </div>
+    </footer>
+
+    <!-- Load libraries in correct order -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stockfish.js@10.0.2/stockfish.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chess-engine.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
